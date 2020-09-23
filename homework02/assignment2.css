@@ -1,0 +1,92 @@
+.maroon-banner{
+    background-color: #97252b;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.items:hover{
+    color: grey;
+}
+.items{
+    position: relative;
+    color: #fff;
+    font-family: "Fjalla One","FjallaOne-Regular","Helvetica Neue Condensed","HelveticaNeueCondensed","HelveticaNeue-Condensed","Helvetica Neue Condensed","HelveticaNeueRomanCondensed","Helvetica Condensed","Arial Narrow","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-stretch: condensed;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing: 1px;
+    margin: 0;
+    display: inline-block;
+    white-space: nowrap;
+    padding:0px 70px;
+    font-size:1.5vw;
+}
+
+.ul{
+    font-family: inherit;
+    line-height: 1.6;
+    list-style-position: outside;
+    text-align: center;
+    
+}
+
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 20px;
+   
+}
+
+.search-icon {
+    position: absolute;
+    top: 8px;
+    right: 9px;
+    cursor: pointer;
+}
+
+.input{
+    border-radius: 4px;
+    position: absolute;
+    width: 90px;
+    margin-left: 1390px;
+    margin-top: 65px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: none;
+    border-color: #ddd;
+    padding-bottom: 20px;
+
+}
+
+.input-text{
+    background-color: #ddd;
+
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .right-align {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    padding: 10px;
+}
+
+.text-centered{
+    text-align: center;
+    font-family: inherit;
+    font-size: 50px;
+    padding-top: 20px;
+    font-weight: 400;
+}

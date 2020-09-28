@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <!-- HTML elements -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hint</title>
+        <link rel="stylesheet" href="hmk3.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body class="cute-color">
+        <div>
+            <h1 class="h1">How old is my cat?</h1>
+            <hr class=" divider mb-4">
+            <p class="h5">Based on these pictures , can you tell how old Mittens is?</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img class="img2" src="mittens1.jpg" style="width:100%">
+
+            </div>
+            <div class="column">
+                <img class="img2" src="mittens2.png"style="width:100%">
+            </div>
+            <div class="column">
+                <img class="img2" src="mittens3.jpg"style="width:100%">
+            </div>
+        </div>
+        <div>
+            <div class="button-center">
+                <button class="button" id ="hint-bttn">Open Hint</button>
+            </div>
+        </div>
+        <div id="hint-modal" class="hint">
+            <div class="hint-content">
+              <span class="close">&times;</span>
+              <p>She's not old enough to vote</p>
+            </div>   
+        </div>
+    </body>
+    <script>
+        //Java Script to create the functionality of the hint
+
+        /* function uses window.onload to 
+         *
+         */
+        window.onload = function () {
+        var hint = document.querySelector('.hint');
+        var hintBtn = document.getElementById('hint-bttn');
+        var span = document.querySelector('.close');
+
+
+        hintBtn.onclick = function(){
+            hint.style.display="block";   
+        }
+        span.onclick = function(){
+            hint.style.display="none";
+        }
+
+        };
+      
+    </script>
+</html>

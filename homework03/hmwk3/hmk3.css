@@ -1,0 +1,108 @@
+h1{
+font-family: "Fjalla One","FjallaOne-Regular","Helvetica Neue Condensed","HelveticaNeueCondensed","HelveticaNeue-Condensed","Helvetica Neue Condensed","HelveticaNeueRomanCondensed","Helvetica Condensed","Arial Narrow","Helvetica Neue",Helvetica,Arial,sans-serif;
+font-style: normal;
+font-weight: bold;
+font-stretch: condensed;
+/* text-transform: uppercase; */
+line-height: 50px;
+letter-spacing: 1px;
+margin: 0;
+text-align: center;
+color:white;
+}
+
+.cute-color {
+    background-color: #e5989b;
+ }
+
+ .divider-md-sm {
+    width: 100px;
+    /* border-top: 3px solid black; */
+}
+
+.divider {
+    width: 50px;
+    border-color: #ffddd2;
+    border-top: 5px solid #ffddd2;
+}
+
+.h5{
+    text-align:center;
+    color: #6d6875;
+    padding-top: 30px;
+    font-weight: bold;
+    font-family: 'Epilogue', sans-serif;
+    /* font-family: "Fjalla One","FjallaOne-Regular","Helvetica Neue Condensed","HelveticaNeueCondensed","HelveticaNeue-Condensed","Helvetica Neue Condensed","HelveticaNeueRomanCondensed","Helvetica Condensed","Arial Narrow","Helvetica Neue",Helvetica,Arial,sans-serif; */
+}
+
+
+.img2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    width:100%;
+    border: 4px solid #ffcdb2;
+    border-radius: 2px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+}
+
+.button {
+    background-color: #fec89a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .button-center {
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .hint {
+    display: none; 
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 70px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 50%; /* Full width */
+    height: 50%; /* Full height */
+    
+  }
+
+  .close-x {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  
+  .hint-content {
+    background-color: #f9dcc4;;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #fec89a;
+    border-radius: 4px;
+    width: 80%;
+  }
+  

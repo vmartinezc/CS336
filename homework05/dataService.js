@@ -32,6 +32,14 @@ class DataService {
         phoneNumber: '22216656',
 
     },
+    {
+        name: 'Toño',
+        gender:'Male',
+        address:'904',
+        age: 23,
+        phoneNumber: '6165342378',
+
+    },
     ];
 
     getData(numRecords){
@@ -39,7 +47,15 @@ class DataService {
     }
 }
 
-const p = new DataService();
-console.log(p.getData(3));
+//Testing outputs
 
+//const d = new DataService();
+//console.log(d.getData(1)); 
+//Expect output: First record only
+
+//console.log(d.getData(2)); 
+//Expect output: First 2 records
+
+//console.log(d.getData());
+//Expect output: All records
 

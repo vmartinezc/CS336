@@ -5,9 +5,11 @@
 */
 
 class DataService {
+
+    //Does nothing
     constructor(){};
 
-
+    //data array with at least 3 objects
     data = [
         {
         name: 'Valeria',
@@ -42,6 +44,11 @@ class DataService {
     },
     ];
 
+    /* getData()
+    * @params: numRecords, an integer
+    * if param n is passed fecth n objects in order
+    * else, return whole array 
+    */
     getData(numRecords){
            return (numRecords ? this.data.filter((record, idx) => idx < numRecords) : this.data);
     }

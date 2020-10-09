@@ -1,14 +1,21 @@
+
+/* addData()
+* @param: none
+* creates a new instance of DataService, calls getData
+*/
 const addDataRows = () => {
     const addRow = new DataService().getData();
     console.log(addRow);
 
     const dataRow = document.getElementById("rows");
 
-    addRow.forEach(Object => {
+    addRow.forEach(Object => {  //creates a new row for each object in dataRow
         createRow(dataRow, Object);
     })
 };
 
+
+//Creates a New Row for an object
  createRow=(parentElem, rowData) => {
     tableRow = parentElem.insertRow(0);
 

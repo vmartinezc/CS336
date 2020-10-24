@@ -3,9 +3,13 @@
 * @param: none
 * creates a new instance of DataService, calls getData
 */
-const addDataRows = () => {
-    const addRow = new DataService().getData();
-    console.log(addRow);
+async function addDataRows(){
+    fetchData = new DataService();
+    await fetchData.fetchData();
+    const addRow = new fetchData.getData();
+    // const fetchDay = new DataService.fetchDay();
+    // console.log(addRow);
+    // console.log(fetchDay);
 
     const dataRow = document.getElementById("rows");
 

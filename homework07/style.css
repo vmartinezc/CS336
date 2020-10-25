@@ -1,5 +1,5 @@
 
-*{
+* {
     border: 1px solid red;
 }
 
@@ -9,27 +9,21 @@
 
 .card{
     padding: 1rem;
-    height: 100%;
-    width:100%;
-    display: inline-flex;
-}
-
-.grid{
-    padding: 1rem;
-    height: 100%;
-    width: 25%;
     display: grid;
-    grid-template-columns: subgrid;
-    text-align: left;
-    grid-column: span 3;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
 }
 
 .shadowed {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
 .logo-div{
-    display: grid;
-    width: 50%;
+    height: 200px;
+    grid-row: 1 / 4;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url('otters.png');
 }
 
 .find-more-btn{
@@ -40,27 +34,17 @@
     font-weight: bold;
     font-size: 15px;
     order:3;
-    align-content: flex-start;
-    display: inline-block;
-    padding: .5rem 1rem;
-    
-    
 }
+
 .title{
- color: black;
- font-size: 20px;
- order:1;
- display: inline-block;
-
-
+    color: black;
+    font-size: 20px;
+    order:1;
 }
 
 .subtitle{
- color: grey;
- font-size: 15px;
- order:2;
- flex-flow: row wrap;
- align-content: flex-end;
- display: inline-block;
+    color: grey;
+    font-size: 15px;
+    order:2;
 }
 

@@ -19,7 +19,7 @@
 }
 
 .logo-div{
-    height: 200px;
+    height: 400px;
     grid-row: 1 / 4;
     background-size: 100% 100%;
     background-repeat: no-repeat;

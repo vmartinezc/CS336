@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet.css" href="stylesheet.css">
+  </head>
+  <body>
+    <!-- Title -->
+    <h1 class="title">Guess the Number</h1>
+    <!-- Card component -->
+    <div class="card">
+      <div class>
+        <p class="first-label">Guess the square root of</p>
+        <input type="text" class="shadowed" placeholder="Enter square root here" [(ngModel)]="target">
+      </div>
+    <div>
+      <p>within</p>
+      <input type="text" placeholder="Accuracy percentage here" class="shadowed" [(ngModel)]="accuracy">
+      <p>%</p>
+    </div>
+    <button (click)="generateNum()">Generate Random Number</button>
+    <!-- If the answer is not correct, display this div -->
+      <div *ngIf="!isCorrectAnswer">
+        <label class="guess">Enter your guess:</label>
+        <input #guessAnswer type="text" class="shadowed" placeholder="Guess goes here" [(ngModel)]="guess" (keyup.enter)="submit()">
+      </div>
+      <div>
+        <button (click)="resetEverything()" *ngIf="isCorrectAnswer">Try Again</button>
+      </div>
+      <!-- Div that displays user feedback -->
+      <div>
+        <label *ngFor="let feedback of feedback">
+          <br>{{feedback.feedback}}
+        </label>
+      </div>
+  </div> 
+  <!--Card component ends-->
+
+  </body>
+</html>
